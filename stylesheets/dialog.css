@@ -1,0 +1,93 @@
+/* line 8, ../sass/dialog.scss */
+.dialog {
+  position: relative;
+  border: 5px blue solid;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+/* line 16, ../sass/dialog.scss */
+.dialog:after {
+  content: "";
+  position: absolute;
+  border-width: 40px;
+  border-color: transparent transparent red transparent;
+  border-style: solid solid solid solid;
+  left: 0;
+  right: 0;
+  top: -75px;
+  margin: auto;
+  height: 0;
+  width: 0;
+}
+/* line 32, ../sass/dialog.scss */
+.dialog:before {
+  content: "";
+  position: absolute;
+  border-width: 40px;
+  border-color: transparent transparent blue transparent;
+  border-style: solid solid solid solid;
+  left: 0;
+  right: 0;
+  top: -83px;
+  margin: auto;
+  height: 0;
+  width: 0;
+}
+/* line 48, ../sass/dialog.scss */
+.dialog:hover {
+  background-color: green;
+  border-color: yellow;
+}
+/* line 52, ../sass/dialog.scss */
+.dialog:hover:after {
+  border-color: transparent transparent green transparent;
+}
+/* line 56, ../sass/dialog.scss */
+.dialog:hover:before {
+  border-color: transparent transparent yellow transparent;
+}
+
+/* line 67, ../sass/dialog.scss */
+.demigo {
+  background: green;
+  border: 10px yellow solid;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+/* line 72, ../sass/dialog.scss */
+.demigo:after {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent yellow yellow;
+  border-style: solid;
+  bottom: calc(-2px);
+  left: calc(-2px);
+}
+/* line 84, ../sass/dialog.scss */
+.demigo:before {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  border-color: yellow yellow transparent transparent;
+  border-style: solid;
+  top: calc(-2px);
+  right: calc(-2px);
+}
+
+/* line 97, ../sass/dialog.scss */
+.center {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
