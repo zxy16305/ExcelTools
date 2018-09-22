@@ -59,28 +59,28 @@
 .demigo:after {
   content: "";
   position: absolute;
-  border-width: 10px;
+  border-width: 7.0922px;
   width: 0;
   height: 0;
   border-color: transparent transparent yellow yellow;
   border-style: solid;
-  bottom: calc(-2px);
-  left: calc(-2px);
+  bottom: calc(0px);
+  left: calc(0px);
 }
-/* line 84, ../sass/dialog.scss */
+/* line 86, ../sass/dialog.scss */
 .demigo:before {
   content: "";
   position: absolute;
-  border-width: 10px;
+  border-width: 7.0922px;
   width: 0;
   height: 0;
   border-color: yellow yellow transparent transparent;
   border-style: solid;
-  top: calc(-2px);
-  right: calc(-2px);
+  top: calc(0px);
+  right: calc(0px);
 }
 
-/* line 97, ../sass/dialog.scss */
+/* line 99, ../sass/dialog.scss */
 .center {
   width: 200px;
   height: 200px;
