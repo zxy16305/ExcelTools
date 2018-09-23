@@ -59,11 +59,13 @@
     border: $border-width $dialog-border-color solid;
     background-color: $dialog-background-color;
   }
-
+  //tip角的一半宽度
   $tip-width-half: ($tip-height/tan(90deg - $tip-angle/2));
-
+  //边框高度增量
   $tip-delta-border-height-half: $border-width/sin($tip-angle/2);
+  //边框高度
   $tip-contain-border-height-half: $tip-delta-border-height-half + $tip-height;
+  //边框宽度
   $tip-contain-border-width-half: $tip-contain-border-height-half*tan($tip-angle/2);
 
   &:after {
